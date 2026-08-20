@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>iPhone OS 1 Simulator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="iphone">
+    <div id="statusbar">
+      <span class="carrier">BalAir</span>
+      <span class="time" id="time"></span>
+      <span class="battery">100%</span>
+    </div>
+
+    <div id="lockscreen" class="screen">
+      <div class="lock-bg"></div>
+      <div class="lock-time" id="lock-time"></div>
+      <div class="lock-date" id="lock-date"></div>
+      <div class="slide-container">
+        <div class="slide-text">slide to unlock</div>
+        <div class="slide-knob" id="slide-knob"></div>
+      </div>
+    </div>
+
+    <div id="homescreen" class="screen hidden">
+      <div class="wallpaper"></div>
+      <div class="icon-grid">
+        <div class="icon" data-app="phone">
+          <div class="icon-img phone"></div>
+          <div class="icon-label">Phone</div>
+        </div>
+        <div class="icon" data-app="mail">
+          <div class="icon-img mail"></div>
+          <div class="icon-label">Mail</div>
+        </div>
+        <div class="icon" data-app="safari">
+          <div class="icon-img safari"></div>
+          <div class="icon-label">Safari</div>
+        </div>
+        <div class="icon" data-app="ipod">
+          <div class="icon-img ipod"></div>
+          <div class="icon-label">iPod</div>
+        </div>
+      </div>
+
+      <div class="dock">
+        <div class="dock-glass"></div>
+        <div class="dock-icons">
+          <div class="icon" data-app="phone">
+            <div class="icon-img phone"></div>
+            <div class="icon-label">Phone</div>
+          </div>
+          <div class="icon" data-app="mail">
+            <div class="icon-img mail"></div>
+            <div class="icon-label">Mail</div>
+          </div>
+          <div class="icon" data-app="safari">
+            <div class="icon-img safari"></div>
+            <div class="icon-label">Safari</div>
+          </div>
+          <div class="icon" data-app="ipod">
+            <div class="icon-img ipod"></div>
+            <div class="icon-label">iPod</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="appscreen" class="screen hidden">
+      <div class="app-header">
+        <span id="app-title">App</span>
+        <button id="app-back">Home</button>
+      </div>
+      <div class="app-body" id="app-body"></div>
+    </div>
+
+    <div id="home-button"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
